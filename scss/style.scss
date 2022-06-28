@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import "categorias";
+@import "contactos";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    background-color: rgb(255, 255, 255);
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        color: white;
+        padding: 5px;
+    }
+    
+    h2,
+    h3 {
+        color: white;
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: large;
+        border: 1px groove white;
+        background-color: rgb(159, 86, 168);
+    }
+    
+    h4 {
+        color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+        font-size: large;
+    }
+}
+
+.sectionNosotros {
+    height: 450px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 80px 10px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 50px;
+    grid-template-areas:
+        "img titulo"
+        "img parrafo";
+        .formatoImagenSobreNosotros {
+            grid-area: img;
+            border-radius: 50%;
+            height: 400px;
+            width: 400px;
+            border: outset;
+        }
+        
+        .parrafoSomos {
+            font-size: large;
+            text-transform: uppercase;
+            padding: 15px;
+            grid-area: parrafo;
+            color: #000;
+            p {
+                padding: 10px;
+            }
+        }
+        
+        .tituloSomos {
+            color: black;
+            background-color: rgb(218, 145, 247);
+            margin-bottom: 30px;
+            grid-area: titulo;
+        }
+}
+
+header {
+    background-color: rgb(159, 86, 168);
+    grid-area: header;
+}
+
+.seccionImg{
+    display: flex;
+    justify-content:space-evenly;
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .formatoEspacio {
+        height: 250px;
+        justify-content: space-evenly;
+        justify-items: center;
+        .imagen {
+            height: 230px;
+            width: 230px;
+            border: outset;
+            margin: 0;
+        }
+    }
+}
+}
+
+footer{ 
+    div {
+    display: inline-block;
+    margin-left: 10px;
+    background-color: rgb(189, 122, 197);
+}
+}
+
+.formatoContactos {
+    color: white;
+    background-color: rgb(189, 122, 197);
+}
+
+@media (min-width: 320px) {
+
+    .sectionNosotros {
+        margin: 0;
+        height: 400px;
+        justify-items: center;
+        justify-content: center;
+        gap: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "img"
+            "titulo"
+            "parrafo";
+            p {
+                font-size: small;
+                padding: 0;
+            }
+
+            .formatoImagenSobreNosotros {
+                margin-top: 5px;
+                height: 200px;
+                width: 200px;
+            }
+        
+            .tituloSomos {
+                font-size: small;
+                color: rgb(255, 255, 255);
+                background-color: rgb(0, 0, 0);
+                padding: 10px;
+                margin: 0;
+        
+            }
+    }
+
+    .sectionCategoria {
+        display: flex;
+        flex-wrap: wrap;
+
+        .categoria1,
+        .categoria2,
+        .categoria3,
+        .categoria4,
+        .categoria5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        margin: 5px;
+        background-color: rgb(189, 122, 197);
+    }
+    }
+
+    .seccionImg{
+    .container{
+        .formatoEspacio {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        }
+    }
+    }
+}
+
+@media (min-width: 600px) {
+
+    .seccionImg{
+    .container{
+        .formatoEspacio {
+            .imagen {
+                height: 180px;
+                width: 180px;
+            }
+        }
+    }
+    }
+    
+}
+
+@media (min-width: 768px) {
+
+    .sectionNosotros {
+        height: 350px;
+        margin: 10px;
+        gap: 10px 10px;
+        grid-template-areas:
+            "img titulo"
+            "img parrafo";
+            p{
+                padding: 5px;
+            }
+
+            .formatoImagenSobreNosotros {
+                height: 300px;
+                width: 300px;
+            }
+    }
+
+    .seccionImg{
+    .container{
+        .formatoEspacio {
+            .imagen {
+                height: 200px;
+                width: 200px;
+                
+            }
+        }
+    }
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    .sectionNosotros {
+        height: 450px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 20px 80px 10px 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px 50px;
+        grid-template-areas:
+            "img titulo"
+            "img parrafo";
+            p{
+                font-size: large;   
+            }
+
+            .formatoImagenSobreNosotros {
+                grid-area: img;
+                border-radius: 50%;
+                height: 400px;
+                width: 400px;
+                border: outset;
+            }
+        
+            .tituloSomos {
+                font-size: 32px;
+                color: black;
+                background-color: rgb(218, 145, 247);
+                margin-bottom: 30px;
+            }
+    }
+
+}

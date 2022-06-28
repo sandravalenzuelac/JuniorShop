@@ -1,0 +1,47 @@
+.secionAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .informacionContactos {
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-evenly;
+        padding: 20px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        width: 600px;
+        border: 2px solid #000;
+        .tituloContactanos {
+            text-align: center;
+            letter-spacing: 5px;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .nombre {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+
+        .categoriaContactos {
+            text-align: left;
+            margin-left: 220px;
+        
+        }
+    }
+
+    form {
+        background-image: url(../img/fondoContactos.png);
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: black;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}

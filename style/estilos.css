@@ -1,130 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: black;
-    background-color: rgb(255, 255, 255);
-}
-
-h1 {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    color: white;
-    padding: 5px;
-}
-
-h2,
-h3 {
-    color: white;
-    text-align: center;
-    letter-spacing: 3px;
-    font-size: large;
-    border: 1px groove white;
-    background-color: rgb(159, 86, 168);
-}
-
-h4 {
-    color: rgb(255, 255, 255);
-    margin-bottom: 10px;
-    font-size: large;
-}
-
-.sectionNosotros {
-    height: 450px;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 20px 80px 10px 80px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px 50px;
-    grid-template-areas:
-        "img titulo"
-        "img parrafo";
-}
-
-.formatoImagenSobreNosotros {
-    grid-area: img;
-    border-radius: 50%;
-    height: 400px;
-    width: 400px;
-    border: outset;
-}
-
-.parrafoSomos {
-    font-size: large;
-    text-transform: uppercase;
-    padding: 15px;
-    grid-area: parrafo;
-    color: #000;
-}
-
-.tituloSomos {
-    color: black;
-    background-color: rgb(218, 145, 247);
-    margin-bottom: 30px;
-    grid-area: titulo;
-}
-
-p {
-    padding: 10px;
-}
-
-header {
-    background-color: rgb(159, 86, 168);
-    grid-area: header;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
 .sectionCategoria {
-    list-style: none;
-    letter-spacing: none;
-    display: flex;
-    padding: 5px;
-    justify-content: space-evenly;
-}
-
-.categoria1:hover {
-    background-color: rgb(114, 21, 201);
-    color: #000;
-}
-
-.categoria2:hover {
-    background-color: rgb(114, 21, 201);
-    color: #000;
-}
-
-.categoria3:hover {
-    background-color: rgb(114, 21, 201);
-    color: #000;
-}
-
-.categoria4:hover {
-    background-color: rgb(114, 21, 201);
-    color: #000;
-}
-
-.categoria5:hover {
-    background-color: rgb(114, 21, 201);
-    color: #000;
-}
-
-.categoria1,
-.categoria2,
-.categoria3,
-.categoria4,
-.categoria5 {
+  list-style: none;
+  letter-spacing: none;
+  display: flex;
+  padding: 5px;
+  justify-content: space-evenly; }
+  .sectionCategoria a {
+    color: white;
+    text-decoration: none; }
+  .sectionCategoria .categoria1,
+  .sectionCategoria .categoria2,
+  .sectionCategoria .categoria3,
+  .sectionCategoria .categoria4,
+  .sectionCategoria .categoria5 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -132,19 +20,22 @@ a {
     height: 100px;
     width: 100px;
     margin: 20px;
-    background-color: rgb(189, 122, 197);
+    background-color: #bd7ac5;
     transition-property: all;
-    transition-duration: 3s;
-}
+    transition-duration: 2s; }
+    .sectionCategoria .categoria1:hover,
+    .sectionCategoria .categoria2:hover,
+    .sectionCategoria .categoria3:hover,
+    .sectionCategoria .categoria4:hover,
+    .sectionCategoria .categoria5:hover {
+      background-color: #7215c9;
+      color: #000; }
 
-.tituloContactanos {
-    text-align: center;
-    letter-spacing: 5px;
-    color: black;
-    margin-bottom: 10px;
-}
-
-.informacionContactos {
+.secionAll {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .secionAll .informacionContactos {
     height: 100vh;
     flex-direction: column;
     text-align: center;
@@ -153,28 +44,20 @@ a {
     margin-bottom: 15px;
     margin-top: 15px;
     width: 600px;
-    border: 2px solid #000;
-}
-
-.nombre {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #000;
-}
-
-.categoriaContactos {
-    text-align: left;
-    margin-left: 220px;
-
-}
-
-.secionAll {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-section form {
+    border: 2px solid #000; }
+    .secionAll .informacionContactos .tituloContactanos {
+      text-align: center;
+      letter-spacing: 5px;
+      color: black;
+      margin-bottom: 10px; }
+    .secionAll .informacionContactos .nombre {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #000; }
+    .secionAll .informacionContactos .categoriaContactos {
+      text-align: left;
+      margin-left: 220px; }
+  .secionAll form {
     background-image: url(../img/fondoContactos.png);
     display: flex;
     flex-direction: column;
@@ -183,216 +66,187 @@ section form {
     background-position: center;
     color: black;
     padding: 20px;
-    box-sizing: border-box;
-}
+    box-sizing: border-box; }
 
-.formatoContactos {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  background-color: white; }
+  body h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
     color: white;
-    background-color: rgb(189, 122, 197);
-}
+    padding: 5px; }
+  body h2,
+  body h3 {
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: large;
+    border: 1px groove white;
+    background-color: #9f56a8; }
+  body h4 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: large; }
+
+.sectionNosotros {
+  height: 450px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 80px 10px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 50px;
+  grid-template-areas: "img titulo"
+ "img parrafo"; }
+  .sectionNosotros .formatoImagenSobreNosotros {
+    grid-area: img;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    border: outset; }
+  .sectionNosotros .parrafoSomos {
+    font-size: large;
+    text-transform: uppercase;
+    padding: 15px;
+    grid-area: parrafo;
+    color: #000; }
+    .sectionNosotros .parrafoSomos p {
+      padding: 10px; }
+  .sectionNosotros .tituloSomos {
+    color: black;
+    background-color: #da91f7;
+    margin-bottom: 30px;
+    grid-area: titulo; }
+
+header {
+  background-color: #9f56a8;
+  grid-area: header; }
+
+.seccionImg {
+  display: flex;
+  justify-content: space-evenly; }
+  .seccionImg .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .seccionImg .container .formatoEspacio {
+      height: 250px;
+      justify-content: space-evenly;
+      justify-items: center; }
+      .seccionImg .container .formatoEspacio .imagen {
+        height: 230px;
+        width: 230px;
+        border: outset;
+        margin: 0; }
 
 footer div {
-    display: inline-block;
-    margin-left: 10px;
-    background-color: rgb(189, 122, 197);
-}
+  display: inline-block;
+  margin-left: 10px;
+  background-color: #bd7ac5; }
 
+.formatoContactos {
+  color: white;
+  background-color: #bd7ac5; }
 
 @media (min-width: 320px) {
+  .sectionNosotros {
+    margin: 0;
+    height: 400px;
+    justify-items: center;
+    justify-content: center;
+    gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "img"
+ "titulo"
+ "parrafo"; }
+    .sectionNosotros p {
+      font-size: small;
+      padding: 0; }
+    .sectionNosotros .formatoImagenSobreNosotros {
+      margin-top: 5px;
+      height: 200px;
+      width: 200px; }
+    .sectionNosotros .tituloSomos {
+      font-size: small;
+      color: white;
+      background-color: black;
+      padding: 10px;
+      margin: 0; }
+  .sectionCategoria {
+    display: flex;
+    flex-wrap: wrap; }
+    .sectionCategoria .categoria1,
+    .sectionCategoria .categoria2,
+    .sectionCategoria .categoria3,
+    .sectionCategoria .categoria4,
+    .sectionCategoria .categoria5 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      height: 80px;
+      width: 80px;
+      margin: 5px;
+      background-color: #bd7ac5; }
+  .seccionImg .container .formatoEspacio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
-    .sectionNosotros {
-        margin: 0;
-        height: 400px;
-        justify-items: center;
-        justify-content: center;
-        gap: 0;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-            "img"
-            "titulo"
-            "parrafo";
-    }
-
-
-    .formatoImagenSobreNosotros {
-        margin-top: 5px;
-        height: 200px;
-        width: 200px;
-    }
-
-    .tituloSomos {
-        font-size: small;
-        color: rgb(255, 255, 255);
-        background-color: rgb(0, 0, 0);
-        padding: 10px;
-        margin: 0;
-
-    }
-
-    p {
-        font-size: small;
-        padding: 0;
-    }
-
-    .sectionCategoria {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .categoria1,
-    .categoria2,
-    .categoria3,
-    .categoria4,
-    .categoria5 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        height: 80px;
-        width: 80px;
-        margin: 5px;
-        background-color: rgb(189, 122, 197);
-    }
-
-    .seccionImg {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .imagen {
-        height: 200px;
-        width: 200px;
-        border: outset;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-}
-
+@media (min-width: 600px) {
+  .seccionImg .container .formatoEspacio .imagen {
+    height: 180px;
+    width: 180px; } }
 
 @media (min-width: 768px) {
-
-    .sectionNosotros {
-        height: 350px;
-        margin: 10px;
-        gap: 10px 10px;
-        grid-template-areas:
-            "img titulo"
-            "img parrafo";
-    }
-
-    .formatoImagenSobreNosotros {
-        height: 300px;
-        width: 300px;
-    }
-
-    p {
-        padding: 5px;
-    }
-
-    .sectionCategoria {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .categoria1,
-    .categoria2,
-    .categoria3,
-    .categoria4,
-    .categoria5 {
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        border-radius: 50%;
-        height: 80px;
-        width: 80px;
-        margin: 5px;
-        background-color: rgb(189, 122, 197);
-    }
-
-    .seccionImg {
-        flex-direction: row;
-        justify-items: center;
-    }
-
-    .container {
-        flex-direction: row;
-        justify-content: space-evenly;
-        justify-items: center;
-        margin-bottom: 10px;
-    }
-
-    .imagen {
-        height: 200px;
-        width: 200px;
-        border: outset;
-    }
-}
+  .sectionNosotros {
+    height: 350px;
+    margin: 10px;
+    gap: 10px 10px;
+    grid-template-areas: "img titulo"
+ "img parrafo"; }
+    .sectionNosotros p {
+      padding: 5px; }
+    .sectionNosotros .formatoImagenSobreNosotros {
+      height: 300px;
+      width: 300px; }
+  .seccionImg .container .formatoEspacio .imagen {
+    height: 200px;
+    width: 200px; } }
 
 @media (min-width: 1025px) {
-
-    .sectionNosotros {
-        height: 450px;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 20px 80px 10px 80px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 20px 50px;
-        grid-template-areas:
-            "img titulo"
-            "img parrafo";
-    }
-
-
-    .formatoImagenSobreNosotros {
-        grid-area: img;
-        border-radius: 50%;
-        height: 400px;
-        width: 400px;
-        border: outset;
-    }
-
-    p {
-        font-size: large;
-    }
-
-    .tituloSomos {
-        font-size: 32px;
-        color: black;
-        background-color: rgb(218, 145, 247);
-        margin-bottom: 30px;
-    }
-
-    .seccionImg {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: space-evenly;
-        justify-items: center;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        justify-items: center;
-        margin-bottom: 10px;
-    }
-
-    .imagen {
-        height: 250px;
-        width: 250px;
-        border: outset;
-        margin: 0;
-    }
-}
+  .sectionNosotros {
+    height: 450px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 80px 10px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 50px;
+    grid-template-areas: "img titulo"
+ "img parrafo"; }
+    .sectionNosotros p {
+      font-size: large; }
+    .sectionNosotros .formatoImagenSobreNosotros {
+      grid-area: img;
+      border-radius: 50%;
+      height: 400px;
+      width: 400px;
+      border: outset; }
+    .sectionNosotros .tituloSomos {
+      font-size: 32px;
+      color: black;
+      background-color: #da91f7;
+      margin-bottom: 30px; } }
