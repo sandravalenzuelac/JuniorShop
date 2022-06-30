@@ -79,16 +79,14 @@ body {
 
 header {
     background-color: rgb(159, 86, 168);
-    grid-area: header;
+    // grid-area: header;
 }
 
 .seccionImg{
-    display: flex;
-    justify-content:space-evenly;
+    @include flex;
 .container{
-    display: flex;
+    @include flex;
     flex-direction: row;
-    justify-content: space-evenly;
     .formatoEspacio {
         height: 250px;
         justify-content: space-evenly;
