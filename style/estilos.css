@@ -28,7 +28,7 @@
     .sectionCategoria .categoria3:hover,
     .sectionCategoria .categoria4:hover,
     .sectionCategoria .categoria5:hover {
-      background-color: #7215c9;
+      background-color: #8a39d6;
       color: #000; }
 
 .secionAll {
@@ -68,34 +68,6 @@
     padding: 20px;
     box-sizing: border-box; }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: black;
-  background-color: white; }
-  body h1 {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 8px;
-    color: white;
-    padding: 5px; }
-  body h2,
-  body h3 {
-    color: white;
-    text-align: center;
-    letter-spacing: 3px;
-    font-size: large;
-    border: 1px groove white;
-    background-color: #9f56a8; }
-  body h4 {
-    color: white;
-    margin-bottom: 10px;
-    font-size: large; }
-
 .sectionNosotros {
   height: 450px;
   align-items: center;
@@ -105,8 +77,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 20px 50px;
-  grid-template-areas: "img titulo"
- "img parrafo"; }
+  grid-template-areas: "img titulo" "img parrafo"; }
   .sectionNosotros .formatoImagenSobreNosotros {
     grid-area: img;
     border-radius: 50%;
@@ -121,37 +92,112 @@ body {
     color: #000; }
     .sectionNosotros .parrafoSomos p {
       padding: 10px; }
-  .sectionNosotros .tituloSomos {
-    color: black;
-    background-color: #da91f7;
-    margin-bottom: 30px;
-    grid-area: titulo; }
+
+.tituloSomos {
+  color: black;
+  background-color: #da91f7;
+  margin-bottom: 30px;
+  grid-area: titulo; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  background-color: white; }
+
+.bcheader {
+  background-color: #da91f7; }
+
+.bcbody {
+  background-color: #fff; }
+
+h4 {
+  background-color: #fff;
+  font-size: large;
+  margin-bottom: 10px; }
+
+.titulos, .titulos1 {
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: large;
+  border: 1px groove white;
+  background-color: #9f56a8; }
+
+.titulos1 {
+  letter-spacing: none; }
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: white;
+  padding: 5px; }
+
+h2 {
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: large;
+  border: 1px groove white;
+  background-color: #9f56a8; }
 
 header {
-  background-color: #9f56a8;
-  grid-area: header; }
+  background-color: #da91f7; }
 
 .seccionImg {
   display: flex;
   justify-content: space-evenly; }
   .seccionImg .container {
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
-    justify-content: space-evenly; }
+    height: 340px; }
     .seccionImg .container .formatoEspacio {
-      height: 250px;
+      background-color: #f7c3f4;
+      height: 330px;
+      width: 240px;
       justify-content: space-evenly;
-      justify-items: center; }
-      .seccionImg .container .formatoEspacio .imagen {
-        height: 230px;
-        width: 230px;
+      justify-items: center;
+      align-items: center; }
+      .seccionImg .container .formatoEspacio .compras p {
+        margin-top: 5px;
+        text-align: center; }
+      .seccionImg .container .formatoEspacio .compras .imagen {
+        height: 200px;
+        width: 200px;
         border: outset;
         margin: 0; }
+      .seccionImg .container .formatoEspacio .compras div {
+        height: 40px;
+        width: 80px;
+        background-color: black;
+        border-radius: 10%;
+        justify-content: center;
+        align-items: center;
+        justify-items: center; }
+        .seccionImg .container .formatoEspacio .compras div:hover {
+          background-color: rgba(227, 222, 231, 0.103);
+          color: #000; }
+        .seccionImg .container .formatoEspacio .compras div .botonComprar {
+          text-decoration: none;
+          align-items: center;
+          padding: 20px;
+          color: white;
+          font-size: large; }
 
-footer div {
-  display: inline-block;
-  margin-left: 10px;
-  background-color: #bd7ac5; }
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px; }
+  footer div {
+    display: inline-block;
+    margin-left: 10px;
+    background-color: #bd7ac5; }
 
 .formatoContactos {
   color: white;
@@ -166,9 +212,7 @@ footer div {
     gap: 0;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "img"
- "titulo"
- "parrafo"; }
+    grid-template-areas: "img" "titulo" "parrafo"; }
     .sectionNosotros p {
       font-size: small;
       padding: 0; }
@@ -214,8 +258,7 @@ footer div {
     height: 350px;
     margin: 10px;
     gap: 10px 10px;
-    grid-template-areas: "img titulo"
- "img parrafo"; }
+    grid-template-areas: "img titulo" "img parrafo"; }
     .sectionNosotros p {
       padding: 5px; }
     .sectionNosotros .formatoImagenSobreNosotros {
@@ -235,8 +278,7 @@ footer div {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px 50px;
-    grid-template-areas: "img titulo"
- "img parrafo"; }
+    grid-template-areas: "img titulo" "img parrafo"; }
     .sectionNosotros p {
       font-size: large; }
     .sectionNosotros .formatoImagenSobreNosotros {

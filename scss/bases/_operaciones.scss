@@ -1,0 +1,37 @@
+$fondos: (header: #da91f7,
+    body: #fff,
+
+);
+
+@each $fondo,
+$color in $fondos {
+    .bc#{$fondo} {
+        background-color: $color;
+    }
+}
+
+$estilos: (
+    color: #fff,
+    tFuente: large,
+    mB: 10px,
+);
+
+h4 {
+    background-color: map-get($estilos, color);
+    font-size: map-get($estilos, tFuente);
+    margin-bottom: map-get($estilos, mB);
+}
+
+.titulos {
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: large;
+    border: 1px groove white;
+    background-color: rgb(159, 86, 168);
+}
+
+.titulos1 {
+    @extend .titulos;
+    letter-spacing: none;
+}

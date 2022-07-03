@@ -1,0 +1,39 @@
+.sectionNosotros {
+    height: 450px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 80px 10px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 50px;
+    grid-template-areas:
+        "img titulo"
+        "img parrafo";
+        .formatoImagenSobreNosotros {
+            grid-area: img;
+            border-radius: 50%;
+            height: 400px;
+            width: 400px;
+            border: outset;
+        }
+        
+        .parrafoSomos {
+            font-size: large;
+            text-transform: uppercase;
+            padding: 15px;
+            grid-area: parrafo;
+            color: #000;
+            p {
+                padding: 10px;
+            }
+        }
+        
+}
+
+.tituloSomos {
+    color: black;
+    background-color: rgb(218, 145, 247);
+    margin-bottom: 30px;
+    grid-area: titulo;
+}
