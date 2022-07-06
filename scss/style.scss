@@ -44,21 +44,21 @@ header {
             justify-content: space-evenly;
             justify-items: center;
             align-items: center;
-
+        
             .compras {
-
+        
                 p {
                     margin-top: 5px;
                     text-align: center;
                 }
-
+        
                 .imagen {
                     height: 200px;
                     width: 200px;
                     border: outset;
                     margin: 0;
                 }
-
+        
                 div {
                     height: 40px;
                     width: 80px;
@@ -67,26 +67,19 @@ header {
                     justify-content: center;
                     align-items: center;
                     justify-items: center;
-
+        
                     &:hover {
-                        background-color: rgba(227, 222, 231, 0.103);
-                        color: #000;
+                        background-color: rgba(255, 255, 255, 0.77);
+                        color: black;
                     }
-
-                    .botonComprar {
-                        text-decoration: none;
-                        align-items: center;
-                        padding: 20px;
-                        color: rgb(255, 255, 255);
-                        font-size: large;
-
-                    }
-
+        
                 }
             }
         }
     }
 }
+
+
 
 
 footer {
@@ -172,39 +165,24 @@ footer {
             }
         }
     }
-
 }
 
-// @media (min-width: 500px) {
-//     .seccionImg {
-//         .container {
-//             .formatoEspacio {
-//                 justify-content: space-evenly;
+ @media (min-width: 500px) {
 
-//                 .imagen {
-//                     height: 180px;
-//                     width: 180px;
-//                 }
-//             }
-//         }
-//     }
+    .seccionAll {
+        width: 450px;
 
-// }
+    }
+}
 
 @media (min-width: 600px) {
 
-    .seccionImg {
-        .container {
-            .formatoEspacio {
-                .imagen {
+     .imagen {
                     height: 180px;
                     width: 180px;
                 }
-            }
-        }
     }
 
-}
 
 @media (min-width: 768px) {
 

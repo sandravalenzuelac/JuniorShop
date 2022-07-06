@@ -28,8 +28,7 @@
     .sectionCategoria .categoria3:hover,
     .sectionCategoria .categoria4:hover,
     .sectionCategoria .categoria5:hover {
-      background-color: #8a39d6;
-      color: #000; }
+      background-color: #8a39d6; }
 
 .secionAll {
   display: flex;
@@ -181,14 +180,8 @@ header {
         align-items: center;
         justify-items: center; }
         .seccionImg .container .formatoEspacio .compras div:hover {
-          background-color: rgba(227, 222, 231, 0.103);
-          color: #000; }
-        .seccionImg .container .formatoEspacio .compras div .botonComprar {
-          text-decoration: none;
-          align-items: center;
-          padding: 20px;
-          color: white;
-          font-size: large; }
+          background-color: rgba(255, 255, 255, 0.77);
+          color: black; }
 
 footer {
   display: flex;
@@ -248,8 +241,12 @@ footer {
     justify-content: center;
     align-items: center; } }
 
+@media (min-width: 500px) {
+  .seccionAll {
+    width: 450px; } }
+
 @media (min-width: 600px) {
-  .seccionImg .container .formatoEspacio .imagen {
+  .imagen {
     height: 180px;
     width: 180px; } }
 
