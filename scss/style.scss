@@ -29,57 +29,58 @@ header {
     background-color: rgb(218, 145, 247);
 }
 
-.seccionImg {
-    @include flex;
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    // height: 340px;
 
-    .container {
-        @include flex;
+    .formatoEspacio {
+        display: flex;
         flex-direction: row;
-        height: 340px;
+        background-color: rgb(247, 195, 244);
+        height: 330px;
+        width: 240px;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
 
-        .formatoEspacio {
-            background-color: rgb(247, 195, 244);
-            height: 330px;
-            width: 240px;
-            justify-content: space-evenly;
+        h4 {
+            background-color: none;
+            text-align: center;
+        }
+
+        p {
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        .imagen {
+            height: 200px;
+            width: 200px;
+            border: outset;
+            margin: 0;
+        }
+
+        .botonCompra {
+            text-decoration: none;
+            height: 40px;
+            width: 80px;
+            background-color: rgb(189, 122, 197);
+            border-radius: 10%;
+            justify-content: center;
             justify-items: center;
-            align-items: center;
-        
-            .compras {
-        
-                p {
-                    margin-top: 5px;
-                    text-align: center;
-                }
-        
-                .imagen {
-                    height: 200px;
-                    width: 200px;
-                    border: outset;
-                    margin: 0;
-                }
-        
-                div {
-                    height: 40px;
-                    width: 80px;
-                    background-color: black;
-                    border-radius: 10%;
-                    justify-content: center;
-                    align-items: center;
-                    justify-items: center;
-        
-                    &:hover {
-                        background-color: rgba(255, 255, 255, 0.77);
-                        color: black;
-                    }
-        
-                }
+            color: white;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.77);
+                color: black;
             }
+
         }
     }
 }
-
-
 
 
 footer {
@@ -155,33 +156,36 @@ footer {
         }
     }
 
-    .seccionImg {
-        .container {
-            .formatoEspacio {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
+    .container {
+
+        .formatoEspacio {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
         }
     }
+ 
+
 }
 
- @media (min-width: 500px) {
+@media (min-width: 500px) {
 
     .seccionAll {
         width: 450px;
 
     }
+
 }
 
 @media (min-width: 600px) {
 
-     .imagen {
-                    height: 180px;
-                    width: 180px;
-                }
+    .imagen {
+        height: 150px;
+        width: 150px;
     }
+}
 
 
 @media (min-width: 768px) {
@@ -204,17 +208,18 @@ footer {
         }
     }
 
-    .seccionImg {
-        .container {
-            .formatoEspacio {
-                .imagen {
-                    height: 200px;
-                    width: 200px;
 
-                }
+    .container {
+    
+        .formatoEspacio {
+            .imagen {
+                height: 200px;
+                width: 200px;
+
             }
         }
     }
+
 
 }
 
@@ -251,6 +256,11 @@ footer {
             background-color: rgb(218, 145, 247);
             margin-bottom: 30px;
         }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
     }
 
 }

@@ -148,40 +148,43 @@ h2 {
 header {
   background-color: #da91f7; }
 
-.seccionImg {
+.container {
   display: flex;
-  justify-content: space-evenly; }
-  .seccionImg .container {
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .container .formatoEspacio {
     display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
-    height: 340px; }
-    .seccionImg .container .formatoEspacio {
-      background-color: #f7c3f4;
-      height: 330px;
-      width: 240px;
-      justify-content: space-evenly;
+    background-color: #f7c3f4;
+    height: 330px;
+    width: 240px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px; }
+    .container .formatoEspacio h4 {
+      background-color: none;
+      text-align: center; }
+    .container .formatoEspacio p {
+      margin-top: 5px;
+      text-align: center; }
+    .container .formatoEspacio .imagen {
+      height: 200px;
+      width: 200px;
+      border: outset;
+      margin: 0; }
+    .container .formatoEspacio .botonCompra {
+      text-decoration: none;
+      height: 40px;
+      width: 80px;
+      background-color: #bd7ac5;
+      border-radius: 10%;
+      justify-content: center;
       justify-items: center;
-      align-items: center; }
-      .seccionImg .container .formatoEspacio .compras p {
-        margin-top: 5px;
-        text-align: center; }
-      .seccionImg .container .formatoEspacio .compras .imagen {
-        height: 200px;
-        width: 200px;
-        border: outset;
-        margin: 0; }
-      .seccionImg .container .formatoEspacio .compras div {
-        height: 40px;
-        width: 80px;
-        background-color: black;
-        border-radius: 10%;
-        justify-content: center;
-        align-items: center;
-        justify-items: center; }
-        .seccionImg .container .formatoEspacio .compras div:hover {
-          background-color: rgba(255, 255, 255, 0.77);
-          color: black; }
+      color: white; }
+      .container .formatoEspacio .botonCompra:hover {
+        background-color: rgba(255, 255, 255, 0.77);
+        color: black; }
 
 footer {
   display: flex;
@@ -235,7 +238,7 @@ footer {
       width: 80px;
       margin: 5px;
       background-color: #bd7ac5; }
-  .seccionImg .container .formatoEspacio {
+  .container .formatoEspacio {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -247,8 +250,8 @@ footer {
 
 @media (min-width: 600px) {
   .imagen {
-    height: 180px;
-    width: 180px; } }
+    height: 150px;
+    width: 150px; } }
 
 @media (min-width: 768px) {
   .sectionNosotros {
@@ -261,7 +264,7 @@ footer {
     .sectionNosotros .formatoImagenSobreNosotros {
       height: 300px;
       width: 300px; }
-  .seccionImg .container .formatoEspacio .imagen {
+  .container .formatoEspacio .imagen {
     height: 200px;
     width: 200px; } }
 
@@ -288,4 +291,7 @@ footer {
       font-size: 32px;
       color: black;
       background-color: #da91f7;
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+  .container {
+    display: flex;
+    justify-content: space-between; } }
