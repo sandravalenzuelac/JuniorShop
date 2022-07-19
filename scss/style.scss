@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 @import "componentes/categorias";
-@import "componentes/contactos";
 @import "componentes/nosotros";
 
 @import "bases/mixin";
@@ -29,12 +28,16 @@ header {
     background-color: rgb(218, 145, 247);
 }
 
+section div div p {
+    font-size: large;
+}
+
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    // height: 340px;
+  
 
     .formatoEspacio {
         display: flex;
@@ -45,6 +48,13 @@ header {
         justify-content: center;
         align-items: center;
         margin: 5px;
+
+        .tituloProducto {
+            background-color: rgb(247, 195, 244);
+
+            text-align: center;
+            color: rgb(189, 122, 197);
+        }
 
         h4 {
             background-color: none;
@@ -59,7 +69,9 @@ header {
         .imagen {
             height: 200px;
             width: 200px;
-            border: outset;
+            
+            border-radius: 15px;
+            box-shadow: 0 0 6px rgba(0,0,0,.5);
             margin: 0;
         }
 
@@ -99,6 +111,17 @@ footer {
     color: white;
     background-color: rgb(189, 122, 197);
 }
+
+.formulario {
+    // width: 800px;
+
+    margin:auto;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    background-color: rgb(236, 161, 245);
+}
+
 
 @media (min-width: 320px) {
 
@@ -184,6 +207,10 @@ footer {
     .imagen {
         height: 150px;
         width: 150px;
+    }
+
+    section div div p {
+        font-size: medium;
     }
 }
 

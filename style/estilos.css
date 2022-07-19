@@ -30,43 +30,6 @@
     .sectionCategoria .categoria5:hover {
       background-color: #8a39d6; }
 
-.secionAll {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .secionAll .informacionContactos {
-    height: 100vh;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-evenly;
-    padding: 20px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    width: 600px;
-    border: 2px solid #000; }
-    .secionAll .informacionContactos .tituloContactanos {
-      text-align: center;
-      letter-spacing: 5px;
-      color: black;
-      margin-bottom: 10px; }
-    .secionAll .informacionContactos .nombre {
-      background: transparent;
-      border: none;
-      border-bottom: 1px solid #000; }
-    .secionAll .informacionContactos .categoriaContactos {
-      text-align: left;
-      margin-left: 220px; }
-  .secionAll form {
-    background-image: url(../img/fondoContactos.png);
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: black;
-    padding: 20px;
-    box-sizing: border-box; }
-
 .sectionNosotros {
   height: 450px;
   align-items: center;
@@ -148,6 +111,9 @@ h2 {
 header {
   background-color: #da91f7; }
 
+section div div p {
+  font-size: large; }
+
 .container {
   display: flex;
   flex-direction: row;
@@ -162,6 +128,10 @@ header {
     justify-content: center;
     align-items: center;
     margin: 5px; }
+    .container .formatoEspacio .tituloProducto {
+      background-color: #f7c3f4;
+      text-align: center;
+      color: #bd7ac5; }
     .container .formatoEspacio h4 {
       background-color: none;
       text-align: center; }
@@ -171,7 +141,8 @@ header {
     .container .formatoEspacio .imagen {
       height: 200px;
       width: 200px;
-      border: outset;
+      border-radius: 15px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
       margin: 0; }
     .container .formatoEspacio .botonCompra {
       text-decoration: none;
@@ -198,6 +169,13 @@ footer {
 .formatoContactos {
   color: white;
   background-color: #bd7ac5; }
+
+.formulario {
+  margin: auto;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  background-color: #eca1f5; }
 
 @media (min-width: 320px) {
   .sectionNosotros {
@@ -251,7 +229,9 @@ footer {
 @media (min-width: 600px) {
   .imagen {
     height: 150px;
-    width: 150px; } }
+    width: 150px; }
+  section div div p {
+    font-size: medium; } }
 
 @media (min-width: 768px) {
   .sectionNosotros {
