@@ -37,7 +37,7 @@ section div div p {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-  
+
 
     .formatoEspacio {
         display: flex;
@@ -64,9 +64,9 @@ section div div p {
         .imagen {
             height: 200px;
             width: 200px;
-            
+
             border-radius: 15px;
-            box-shadow: 0 0 6px rgba(0,0,0,.5);
+            box-shadow: 0 0 6px rgba(0, 0, 0, .5);
             margin: 0;
         }
 
@@ -84,7 +84,6 @@ section div div p {
                 background-color: rgba(255, 255, 255, 0.77);
                 color: black;
             }
-
         }
     }
 }
@@ -108,10 +107,10 @@ footer {
 }
 
 .formulario {
-    margin:auto;
+    margin: auto;
     padding: 50px;
     border-radius: 15px;
-    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
     background-color: rgb(236, 161, 245);
 }
 
@@ -182,19 +181,14 @@ footer {
 
         }
     }
- 
+
 }
 
 
 @media (min-width: 500px) {
 
-    .seccionAll {
-        width: 450px;
-
-    }
-
     .sectionNosotros {
-        height: 400px; 
+        height: 400px;
     }
 
 }
@@ -234,7 +228,7 @@ footer {
 
 
     .container {
-    
+
         .formatoEspacio {
             .imagen {
                 height: 200px;
@@ -243,7 +237,6 @@ footer {
             }
         }
     }
-
 
 }
 

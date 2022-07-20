@@ -220,8 +220,6 @@ footer {
     align-items: center; } }
 
 @media (min-width: 500px) {
-  .seccionAll {
-    width: 450px; }
   .sectionNosotros {
     height: 400px; } }
 
