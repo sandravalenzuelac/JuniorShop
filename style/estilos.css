@@ -221,12 +221,18 @@ footer {
 
 @media (min-width: 500px) {
   .sectionNosotros {
-    height: 400px; } }
+    height: 400px; }
+    .sectionNosotros p {
+      margin-left: 5px; } }
 
 @media (min-width: 600px) {
-  .imagen {
+  .sectionNosotros .imagen {
     height: 150px;
     width: 150px; }
+  .sectionNosotros p {
+    font-size: small;
+    margin-top: 10px;
+    margin-left: 5px; }
   section div div p {
     font-size: medium; } }
 
@@ -237,7 +243,10 @@ footer {
     gap: 10px 10px;
     grid-template-areas: "img titulo" "img parrafo"; }
     .sectionNosotros p {
-      padding: 5px; }
+      font-size: medium;
+      padding: 5px;
+      margin-top: 10px;
+      margin-right: 5px; }
     .sectionNosotros .formatoImagenSobreNosotros {
       height: 300px;
       width: 300px; }
@@ -257,7 +266,8 @@ footer {
     gap: 20px 50px;
     grid-template-areas: "img titulo" "img parrafo"; }
     .sectionNosotros p {
-      font-size: large; }
+      font-size: large;
+      margin: 0; }
     .sectionNosotros .formatoImagenSobreNosotros {
       grid-area: img;
       border-radius: 50%;

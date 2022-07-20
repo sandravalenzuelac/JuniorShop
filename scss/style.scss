@@ -189,16 +189,28 @@ footer {
 
     .sectionNosotros {
         height: 400px;
+        
+        p{
+            margin-left: 5px;
+        }
     }
 
 }
 
 @media (min-width: 600px) {
 
+    .sectionNosotros{
     .imagen {
         height: 150px;
         width: 150px;
     }
+
+    p {
+        font-size: small;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+}
 
     section div div p {
         font-size: medium;
@@ -217,7 +229,10 @@ footer {
             "img parrafo";
 
         p {
+            font-size: medium;
             padding: 5px;
+            margin-top: 10px;
+            margin-right: 5px;
         }
 
         .formatoImagenSobreNosotros {
@@ -257,6 +272,7 @@ footer {
 
         p {
             font-size: large;
+            margin: 0;
         }
 
         .formatoImagenSobreNosotros {
