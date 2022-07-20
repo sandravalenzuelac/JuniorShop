@@ -47,7 +47,7 @@
     width: 400px;
     border: outset; }
   .sectionNosotros .parrafoSomos {
-    font-size: large;
+    font-size: larger;
     text-transform: uppercase;
     padding: 15px;
     grid-area: parrafo;
@@ -132,9 +132,6 @@ section div div p {
       background-color: #f7c3f4;
       text-align: center;
       color: #bd7ac5; }
-    .container .formatoEspacio h4 {
-      background-color: none;
-      text-align: center; }
     .container .formatoEspacio p {
       margin-top: 5px;
       text-align: center; }
@@ -180,7 +177,7 @@ footer {
 @media (min-width: 320px) {
   .sectionNosotros {
     margin: 0;
-    height: 400px;
+    height: 450px;
     justify-items: center;
     justify-content: center;
     gap: 0;
@@ -224,7 +221,9 @@ footer {
 
 @media (min-width: 500px) {
   .seccionAll {
-    width: 450px; } }
+    width: 450px; }
+  .sectionNosotros {
+    height: 400px; } }
 
 @media (min-width: 600px) {
   .imagen {

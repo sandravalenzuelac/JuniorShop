@@ -56,11 +56,6 @@ section div div p {
             color: rgb(189, 122, 197);
         }
 
-        h4 {
-            background-color: none;
-            text-align: center;
-        }
-
         p {
             margin-top: 5px;
             text-align: center;
@@ -113,8 +108,6 @@ footer {
 }
 
 .formulario {
-    // width: 800px;
-
     margin:auto;
     padding: 50px;
     border-radius: 15px;
@@ -127,7 +120,7 @@ footer {
 
     .sectionNosotros {
         margin: 0;
-        height: 400px;
+        height: 450px;
         justify-items: center;
         justify-content: center;
         gap: 0;
@@ -190,14 +183,18 @@ footer {
         }
     }
  
-
 }
+
 
 @media (min-width: 500px) {
 
     .seccionAll {
         width: 450px;
 
+    }
+
+    .sectionNosotros {
+        height: 400px; 
     }
 
 }
